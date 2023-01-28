@@ -1,0 +1,66 @@
+#box1{
+    border: 5px solid;
+    width: 350px;
+    height: 100px;
+    font-size: 17px;
+    background: linear-gradient(to right,blue,lightgreen);
+}
+
+#box2{
+    border: 5px solid;
+    width: 350px;
+    height: 100px;
+    font-size: 17px;
+    background: linear-gradient(to left,blue,lightgreen);
+}
+body{
+    background-image: url("th.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+body{
+    margin: 5px;
+}
+#box3{
+float: right;
+border: 5px solid;
+
+}
+#box4{
+    color: darkblue;
+    transform: translateX(50px);
+    animation: myslide;
+    animation-duration: 8s;
+
+}
+@keyframes myslide{
+    from{margin-left: 100%}
+    to{margin-left: 0%}
+}
+
+#box5{
+    transform: translateX(25px);
+    animation: slide;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes slide{
+    from{margin-left: 100%}
+    to{margin-left: -25%;}
+}
+button{
+    background-color: aquamarine;
+    border: 3px solid;
+    padding: 30px 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: lightblue;
+}
+button:active{
+    background-color: blue;
+}
